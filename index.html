@@ -14,9 +14,11 @@
         let what = ['my homework', 'my phone', 'the car', 'my bed'];
         let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch'];
 
-        let randomIndex = Math.floor(Math.random() * 4);
+        const getRandomNum = () => {
+            return Math.floor(Math.random() * 4)
+        } 
 
-        let excuse = `${who[randomIndex]} ${action[randomIndex]} ${what[randomIndex]} ${when[randomIndex]}`;
+        let excuse = `${who[getRandomNum()]} ${action[getRandomNum()]} ${what[getRandomNum()]} ${when[getRandomNum()]}`;
         document.getElementById('excuse').innerText = excuse;
     </script>
 </body>
